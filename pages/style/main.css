@@ -1,0 +1,421 @@
+/********************************************the logging/signning PART****************************************/
+body{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+    }
+header{
+  width: 100%;
+   height: 100vh;
+ }
+#slideshow {
+    position: relative; 
+    width:100%;
+    height: 100px;  
+}
+#slideshow img{
+    width: 100%;
+    height: 100vh;
+}
+#slideshow > div { 
+    position: absolute; 
+}
+#btn-sign-up,#btn-log-in{
+    width: 86%;
+    padding: 1%;
+    margin-left: 7%;
+    font-weight: 800;
+    cursor: pointer;
+    border: none;
+}
+#btn-sign-up:hover{
+    background-color: green;
+    color: white;
+}
+#btn-log-in:hover{
+    background-color: blue;
+    color: white;
+}
+#div-logo{
+    background-color: darkgoldenrod;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 122%;
+    position: relative;
+    left: 4%;
+}
+#div-logo a{
+    text-decoration: none;
+    color: white;
+}
+.list-menu-container{
+    background-color: #00000085;
+    width: 100%;
+    position: fixed;
+    top: -1%;
+    z-index: 45;
+}
+.list-menu{
+    display: flex;
+}
+#items{
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    position: fixed;
+    left: 34%;
+}
+#items a{
+    text-decoration: none;
+    color: wheat;
+    position: relative;
+    top: 24px;
+    font-family: cursive;
+    font-size: 22px  
+}
+#items a:hover{
+    text-decoration: underline;
+    color: #e0a347;
+}
+.btn-squire{
+    width: 45px;
+    height: 43px;
+    position: fixed;
+    left: 87%;
+    top: 15px;
+    cursor: pointer;
+    z-index: 45;
+    background-color: #0000005e
+}
+.btn-squire hr{
+    width: 31px;
+    background-color: white;
+    height: 3px;
+    border: none;
+}
+.error-log-form,.error-sign-form{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+.logging_form , .Signning_form{
+    border: 1px solid black;
+    width: 40%;
+    margin: auto;
+    padding: 2%;
+    box-shadow: 0px 0px 12px white;
+    position: absolute;
+    left: 28%;
+    bottom: 156px;
+    background-color: #222c61c2;
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .logging_form , .Signning_form{
+        width: 60%;
+        left: 19%;
+    }
+}
+.logging_form input, .Signning_form input {
+    text-align: center;
+    width: 84%;
+    position: relative;
+    left: 7%;
+    padding: 5px;
+    border-style: none ;
+    background-color: #20108e;
+    color: white;
+    border-bottom: 3px solid white;
+}
+.logging_form input:focus, .Signning_form input:focus{
+    outline: none;
+}
+.logging_form span, .Signning_form span{
+    color: #e0a347;
+    margin-left: 7%;
+    font-size: 17px;
+}
+@media only screen and (max-width: 524px){
+    .logging_form span, .Signning_form span{
+        font-size: 16px;
+    }
+}
+/************************************************the home.HTML PART******************************************/
+#header-home{
+    height: 0px;
+}
+#header-home-img{
+    width: 100%;
+}
+#items-home{
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    position: fixed;
+    left: 34%;
+}
+#items-home a{
+    text-decoration: none;
+    color: wheat;
+    position: relative;
+    top: 24px;
+    left: 40%;
+    font-family: cursive;
+    font-size: 22px
+    
+}
+#items-home a:hover{
+    text-decoration: underline;
+    color: #e0a347;
+}
+.header-title{
+    bottom: 446px;
+    position: absolute;
+    left: 53%;
+    text-align: center;
+    font-family: sans-serif;
+    color: darkblue;
+    font-size: 16px;
+}
+.container{
+    width: 70%;
+    left: 18%;
+    position: relative;
+    top: 357px;
+}
+@media only screen and (max-width: 715px){
+    .container{
+        width: 94%;
+        left: 7%;
+        position: relative;
+        top: 357px;
+    }
+}
+.container img {
+    width: 92%;
+    margin: auto;
+    margin-top: 19px;
+    box-shadow: 0px 0px 25px;
+}
+.slider-controlls{
+    display: flex;
+    width: 22%;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+.prev, .next{
+    width: 32px;
+    text-align: center;
+    padding: 1%;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #332375;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+#reserve{
+    position: relative;
+    top: 380px;
+    width: 50%;
+    left: 25%;
+    border: none;
+    height: 38px;
+    border-radius: 7px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+#btn-reserve{
+    width: 60%;
+    padding: 7px;
+    width: 60%;
+    font-weight: 700;
+    padding: 7px;
+    cursor: pointer;
+}
+#btn-reserve:hover{
+    background-color: #e0a347;
+}
+.reservation-form{
+    position: relative;
+    top: 410px;
+    box-shadow: 0px 0px 12px;
+    width: 60%;
+    left: 19%;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+@media only screen and (max-width: 715px) {
+    .reservation-form{
+        left: 16%;
+    }
+}
+.reservation-form input,.reservation-form input:focus{
+    width: 70%;
+    border: none;
+    border-bottom: 4px solid;
+    text-align: center;
+    outline: none;
+    font-size: 17px;
+}
+.reservation-form span{
+    color: #2253dc;
+    font-size: 17px;
+}
+#result-final{
+    font-size: 19px;
+    font-weight: bold;
+}
+#result{
+    display: none;
+}
+#sections1{
+    position: relative;
+    top: 403px;
+ }
+.footer-div{
+    background-color: #0c3a51;;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    top: 465px;
+    border-top: 10px solid #ef7f4a;
+        box-shadow: 0px 0px 21px
+}
+@media only screen and (max-width: 1300px){
+    .footer-div{
+        flex-direction: column;
+    }
+}
+.footer-item{
+    padding: 2%;
+    width: 48%;
+    margin: auto;
+}
+.footer-item input {
+    width: 60%;
+    padding: 5px;
+    text-align: center;
+    border: none;
+}
+.footer-item textarea{
+    width: 60.5%;
+    text-align: center;
+}
+.footer-item span{
+    color: yellow;
+}
+.footer-item button{
+    width: 61.5%;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+.footer-item button:hover{
+    background-color: #e0a347;
+}
+@media only screen and (max-width: 1300px){
+    .footer-item button{
+        width: 105%;
+    }
+    .footer-item textarea{
+        width: 103%;
+    }
+    .footer-item input{
+        width: 102%;
+    }
+}
+#feedback-error{
+    color: yellow;
+}
+#icon{
+    font-size: 46px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: 67%;
+    margin: auto;
+}
+.footer-item p{
+    color: wheat;
+    font-size: 17px;
+    text-align: center;
+}
+#wlc-msg{
+    position: absolute;
+    top: 160px;
+    z-index: 1;
+    text-align: center;
+    background-color: #000000ba;
+    width: 30%;
+    padding: 1%;
+    left: 34%;
+    border-radius: 9px;
+}
+#wlc-msg h1{
+    color: yellow;
+}
+#wlc-msg h2{
+    color: white;
+}
+#client{
+    color: #151414;
+    text-shadow: 0px 0px 7px red;
+    text-align: center;
+}
+table{
+    background-color: #e4d1d1;
+    width: 70%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 12px
+  }
+  tr td{
+    border-top: 3px solid #3114a9;
+    padding: 13px;
+    text-align: center;
+  }
+  td .links{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    margin-left: 4px;
+    border-radius: 4px;
+  }
+  .delete{
+      background-color: red;
+  }
+  .edit{
+background-color: green;
+  }
+
+  @media only screen and (max-width: 620px){
+  table th{
+    font-size: 12px;
+    padding-left: 2px;
+  }
+  table td{
+padding: 12px;
+font-size: 14px;
+  }
+  table{
+    background-color: #e4d1d1;
+    width: 100%;
+    margin: 20px auto;
+    display: inline-grid;
+    justify-content: center;
+  }
+}

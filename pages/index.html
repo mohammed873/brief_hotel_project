@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel project</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <section>
+        <header>
+            <div id="wlc-msg">
+                <h1>welcome to the Warm Hotel</h1>
+                <h2> sign up now </h2>
+            </div>
+            <div id="slideshow">
+                <div>
+                  <img src="../picture/header_pic1.jpg">
+                </div>
+                <div>
+                  <img src="../picture/header_pic4.jpg">
+                </div>
+                <div>
+                 <img src="../picture/header_pic3.jpg" alt="">
+                </div>
+                <div>
+                 <img src="../picture/header_pic2.jpg" alt="">
+                </div>
+             </div>
+            <div class="list-menu-container">
+                <div class="list-menu">
+                    <div id="div-logo">
+                        <a href=""> <p>WH</p></a>
+                    </div>
+                    <div id="items">
+                       <a href="#" id="btn-log">Log in</a>
+                       <a href="#" id="btn-sign">Sign up</a>
+                    </div>
+                </div> 
+            </div> 
+            <div class="btn-squire">
+                <hr>
+                <hr>
+                <hr>
+             </div>
+        </header>
+
+        <section>
+            <div class="logging_form">
+                <form action="/home" method="POST">
+                    <div class="error-log-form"></div><br>
+                    <input type="text" placeholder="enter your email" id="email-log" name="user_email" required> <br>
+                    <span id="email-error-log">*required</span><br>
+                    <input type="password" name="user_password" id="password-log" placeholder="enter your password" required><br>
+                    <span id="error-password-log">must include numbers,letters and symbols</span><br><br>
+                    <button type="submit" id="btn-log-in">log in</button>
+                </form>
+            </div>
+            <div class="Signning_form">
+                <form action="/sign" method="POST">
+                    <div class="error-sign-form"></div><br>
+                    <input type="text" placeholder="username"  name="username" id="user-sign" required><br>
+                    <span id="user-error-sign">*Username must be capitilized</span><br>
+                    <input type="text" placeholder="enter your email" name="user_email" id="email-sign" required> <br>
+                    <span id="error-email-sign">*required</span><br>
+                    <input type="password" name="user_password" id="password-sign" placeholder="enter your password" required><br>
+                    <span id="error-password-sign">must include numbers,letters and symbols</span><br><br>
+                    <button type="submit" id="btn-sign-up">Sign up</button>
+                </form>
+            </div>
+        </section>
+    </section>
+       
+
+
+<!--this is js and jquery links-->
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <script src="main_javascript/main.js"></script>
+   <script src="../index.js"></script>
+</body>
+</html>

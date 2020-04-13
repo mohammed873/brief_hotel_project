@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel project</title>
+    <link rel="stylesheet" href="./style/modifying.css">
+    <style>
+        body{
+    background-color: black;
+}
+.reservation-form-modify{
+    width: 60%;
+    margin: auto;
+    border: 2px solid;
+    text-align: center;
+    box-shadow: 0px 0px 12px yellow;
+    position: relative;
+    top: 246px;
+    background-color: white;
+    padding: 20px;
+}
+.reservation-form-modify input{
+    width: 75%;
+    text-align: center;
+    padding: 3px;
+    border: none;
+    border-bottom: 3px solid #0e0e0e;
+    margin-top: 10px;
+    background-color: antiquewhite;
+    outline: none;
+}
+.reservation-form-modify button{
+    width: 65%;
+    padding: 6px;
+}
+.reservation-form-modify button:hover{
+    background-color: green;
+    color:white;
+}
+.reservation-form-modify span{
+    color: blue;
+}
+    </style>
+</head>
+<body>
+    <form action="/modifier" method="POST">
+        <div class="reservation-form-modify">
+            <input type="text" name="id" placeholder="your id" id="id" readonly><br><br>
+            <input type="text" name="reserver_username" placeholder="Enter your name" id="username-reserve"><br>
+            <span id="username-error-reserve">*username must be cabitilized</span><br>
+            <input type="text" id="email-reserve" name="reserver_email" placeholder="Enter your email" required><br>
+            <span id="error-email-reserve">*required</span><br>
+            <input type="text" name="reservation_days" id="days-of-booking" placeholder="How many day you wish to stay" required ><br>
+            <span id="error-days-of-booking">*required</span><br><br>
+            <button type="submit" id="btn-reserve">modify now</button>
+            <br>
+        </div>
+    </form>
+    <script
+src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+
+$(function(){
+    $.ajax({
+        method:"GET",
+        url:"http://localhost:3000/afficher",
+        dataType:"json",
+        success:function(data2){
+    console.log('data' +  JSON.stringify(data2));
+
+$('#id').val(data2.id);
+$('#username-reserve').val(data2.reserver_username);
+$('#email-reserve').val(data2.reserver_email);
+$('#days-of-booking').val(data2.reservation_days);
+        }
+    });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[
+     {
+          "id": 1,
+          "reserver_username": "mohammed",
+          "reserver_email": "hi@gmail.com",
+          "reservation_days": "2",
+          "result": "240 DH"
+     },
+     {
+          "id": 2,
+          "reserver_username": "marwa",
+          "reserver_email": "marwa@gmail.com",
+          "reservation_days": "30",
+          "result": "3600 DH"
+     }
+]

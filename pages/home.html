@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel project</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+    <section>
+        <header  id="header-home">
+            <img id="header-home-img" src="./picture/home-header.png" alt="header-pic">
+            <div class="header-title">
+                <h2>Welcome to Warm Heart hotel</h2>
+                <h4>the best hotel , with the best price</h4>
+            </div>
+            <div class="list-menu-container">
+                <div class="list-menu">
+                    <div id="div-logo">
+                        <a href=""> <p>WH</p></a>
+                    </div>
+                    <div id="items-home">
+                       <a href="index.html" id="btn-sign">Log out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-squire">
+                <hr>
+                <hr>
+                <hr>
+             </div>
+        </header>
+    </section>
+        
+    <section>
+            <div class="container">
+                <div>
+                    <img id="photo1" src="../picture/pic1_home.jpg" alt="hotel-room-picture">
+                </div>
+                <div>
+                    <img id="photo1" src="../picture/pic2_home.jpg" alt="hotel-room-picture">
+                </div>
+                <div>
+                    <img id="photo1" src="../picture/pic3_home.jpg" alt="hotel-room-picture">
+                </div>
+                <div>
+                    <img id="photo1" src="../picture/pic4_home.jpg" alt="hotel-room-picture">
+                </div>   
+            </div>
+        <button id="reserve">reserve now</button>
+        <form action="/reservation" method="POST">
+            <div class="reservation-form">
+                <input type="text" name="reserver_username" placeholder="Enter your name" id="username-reserve"><br>
+                <span id="username-error-reserve">*username must be cabitilized</span><br>
+                <input type="text" id="email-reserve" name="reserver_email" placeholder="Enter your email" required><br>
+                <span id="error-email-reserve">*required</span><br>
+                <input type="number" name="reservation_days" id="days-of-booking" placeholder="How many day you wish to stay" required ><br>
+                <span id="error-days-of-booking">*required</span><br><br>
+                <button type="submit" id="btn-reserve">Reserve now</button>
+                <br><br>
+                <div>
+                    <p id="result-final"></p> <input type="text" name="result" id="result">
+                </div>
+            </div>
+        </form>
+
+        </div>
+    </section>
+<!--  -->
+
+
+<section id="sections1">
+    <h1 id="client"> Clients List</h1>
+    <table class="table table-sm" id="dtable">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">reserver_username</th>
+            <th scope="col">reserver_email</th>
+            <th scope="col">reservation_days</th>
+            <th scope="col">result</th>
+            <th>Treatment</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+            </tbody>
+      </table>
+  </section>
+<!--  -->
+
+
+
+    <section>
+            <div class="footer-div">
+                <div class="footer-item">
+                    <div id="icon">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <br>
+                    <p>all right reseverd from youcode</p>
+              </div>
+              <div class="footer-item">
+                  <input type="text"  placeholder="Enter your name" id="feedback-sender"><br><br>
+                  <textarea name="" id="feedback-area" placeholder="enter your feedback"></textarea><br>
+                  <div id="feedback-error"><p></p></div><br>
+                  <button type="submit" id="btn-feedback">submit feedback</button>
+              </div>
+            </div>
+    </section>
+<!--this is js and jquery links-->
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <script src="main_javascript/main.js"></script>
+   <script src="../index.js"></script>
+</body>
+</html>
