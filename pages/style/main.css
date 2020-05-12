@@ -175,7 +175,7 @@ header{
     color: #e0a347;
 }
 .header-title{
-    bottom: 446px;
+    bottom: 588px;
     position: absolute;
     left: 53%;
     text-align: center;
@@ -402,10 +402,10 @@ table{
 background-color: green;
   }
 
-  @media only screen and (max-width: 620px){
+  @media only screen and (max-width: 685px){
   table th{
-    font-size: 12px;
-    padding-left: 2px;
+    font-size: 13px;
+    padding-left: 8px;
   }
   table td{
 padding: 12px;
@@ -418,4 +418,37 @@ font-size: 14px;
     display: inline-grid;
     justify-content: center;
   }
+}
+
+.reservation-form-modify{
+    width: 60%;
+    margin: auto;
+    border: 2px solid;
+    text-align: center;
+    box-shadow: 0px 0px 12px yellow;
+    position: relative;
+    top: 246px;
+    background-color: white;
+    padding: 20px;
+}
+.reservation-form-modify input{
+    width: 75%;
+    text-align: center;
+    padding: 3px;
+    border: none;
+    border-bottom: 3px solid #0e0e0e;
+    margin-top: 10px;
+    background-color: antiquewhite;
+    outline: none;
+}
+.reservation-form-modify button{
+    width: 65%;
+    padding: 6px;
+}
+.reservation-form-modify button:hover{
+    background-color: green;
+    color:white;
+}
+.reservation-form-modify span{
+    color: blue;
 }
